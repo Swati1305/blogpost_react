@@ -1,17 +1,39 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createRoot } from 'react-dom';
+import AllPost from './components/AllPost';
+import axios from 'axios';
+import AddPost from './components/AddPost';
+import PostDetails from './components/PostDetails';
+import Layout from './components/Layout';
+import Home from './components/Home';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  <BrowserRouter>
+  <Routes>
+  <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/><Route/>
+          <Route path="/post" element={<AllPost/>}></Route>
+          <Route path="/:id" element={<PostDetails/>}></Route>
+          <Route path="/add" element={<AddPost/>}></Route>
+          <Route path="/update/:id" element={<AddPost/>}></Route>
+
+  
+      {/* <Route index element={<Home />} /> */}
+      {/* <Route path="/App" element={<Faculty />} />
+      
+      <Route path="/" element={<AllPost />} />
+      {/* <Route path="/Faculties/:id" element={<FacDetails />} />
+      <Route path="/Faculties/add/:id" element={<FacAdd />} /> */}
+    </Route>
+  </Routes>
+</BrowserRouter>
+</>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

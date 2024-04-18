@@ -1,0 +1,113 @@
+/* AddPost.css
+
+/* Container styling */
+/* .container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* Form styling */
+/* .form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+} */
+
+/* Button styling */
+/* button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}  */
+
+/* AddPost.css */
+
+/* AddPost.css */
+
+/* Container styling */
+/* AddPost.css */
+
+/* AddPost.css */
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table-container {
+
+    
+    margin: 0 auto;
+  }
+  
+/* Container styling */
+.container {
+    width: 100%;
+
+   height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background color */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+}
+
+/* Form group styling */
+td {
+    padding: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+ margin-left: 138px;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

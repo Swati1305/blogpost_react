@@ -1,0 +1,47 @@
+/* PostDetails.css */
+
+  
+/* Container styling */
+.post-details-container {
+    width: 80%;
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Title styling */
+.post-details-title {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.post-details-table {
+    /* //width: 100%; */
+    min-width: 100vh;
+}
+
+.post-details-label {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Button styling */
+.delete-button,
+.edit-button {
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover,
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
